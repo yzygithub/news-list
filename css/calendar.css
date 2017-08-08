@@ -1,0 +1,146 @@
+/* 侧边日历 */
+
+
+/* 设置大小 */
+
+.calendar {
+  width: 260px;
+  height: 335px;
+  font-weight: normal;
+  background: #FAFAFA;
+}
+
+.year {
+  position: relative;
+  height: 55px;
+  line-height: 55px;
+  width: 100%;
+  text-align: center;
+  background: #EBA4A0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.year i {
+  display: block;
+  width: 22px;
+  height: 15px;
+  background: url('../img/icon_all.png') no-repeat -1px -171px;
+  position: absolute;
+  left: 120px;
+  bottom: -3px;
+}
+
+.month-week-box {
+  position: relative;
+  height: 80px;
+  font-size: 18px;
+  color: #fff;
+  background: #C4312A;
+}
+
+.month-week-box h3 {
+  text-align: center;
+  height: 18px;
+  padding: 15px 0;
+}
+
+.month-week-box .prev-month,
+.month-week-box .next-month {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+}
+
+.month-week-box .prev-month:hover,
+.month-week-box .next-month:hover {
+  color: #000;
+}
+
+.month span {
+  cursor: pointer;
+}
+
+.month span:hover {
+  color: #000;
+}
+
+.prev-month {
+  left: 10px;
+}
+
+.next-month {
+  right: 10px;
+}
+
+.week {
+  padding: 5px 0 12px 8px;
+  height: 20px;
+}
+
+.week li {
+  text-align: center;
+  font-size: 12px;
+  float: left;
+  width: 35px;
+  height: 20px;
+}
+
+.calendar-title-box {
+  height: 135px;
+}
+
+.calendar-body-box {
+  height: 190px;
+  padding: 10px 5px 0 10px;
+}
+
+.calendar-table {
+  color: #ccc;
+  font-size: 12px;
+}
+
+.calendar-table tr {
+  text-align: center;
+  width: 250px;
+  height: 30px;
+}
+
+.calendar-table tr td {
+  width: 35px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.calendar-table td a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  float: left;
+  line-height: 30px;
+  margin: auto;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.calendar-table td a:hover {
+  background: #f0f0f0;
+}
+
+.current-day {
+  font-weight: bold;
+  color: #FFF;
+  background: #E6443D !important;
+}
+
+.current-month {
+  color: #000;
+}
+
+.weekend {
+  color: #f00;
+}
+
+.other-month {
+  color: #c3c3c3;
+}
