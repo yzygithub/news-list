@@ -26,11 +26,10 @@ $(document).ready(function () {
     // $lists.empty();
     $.ajax({
       // url: 'http://www.easy-mock.com/mock/597fee33a1d30433d84ea8a6/news/list/',
+      //因为在github pages中ajax无法执行跨域请求，加载本地json文件
       url: './js/mock.json',
       type: 'GET',
       dataType: 'json',
-      //因为在github pages中ajax无法执行跨域请求，加上下面一句
-      // crossDomain: true == !(document.all),
       success: function (data) {
         console.log(data);
         var data=data.reverse();
